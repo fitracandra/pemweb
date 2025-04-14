@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .profile-header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border-radius: 0 0 20px 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #6c757d;
+            transition: all 0.3s;
+        }
+        .social-icon:hover {
+            color: #0d6efd;
+            transform: translateY(-3px);
+        }
+        .skill-badge {
+            margin: 5px;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <div class="container mt-4">
+        <!-- Profile Header -->
+        <div class="profile-header text-center p-5 mb-5 shadow">
+            <img src="https://siakad.esaunggul.ac.id/siakad/siakad/index.php?page=download&type=fotomhs&id=cVZtR0RhOVpWZzFsT1RnWjRaaGc1SnVtYTQyWk0xJTJCcWhpMzNEd1ZuJTJGM3BOVExyR0Z6Q29PRFFocXNycnM0akklMkJKVk5zaWVPQVVVMmFuMThXc1ppOGclM0QlM0Q=" alt="profile picture" class="rowbed-circle img-fluid" style="width: 50px">
+            <h1>Fitra Candra Ramadhani</h1>
+            <p class="text-muted mb-1">FAKULTAS IMLU KOMPUTER</p>
+            <p class="text-muted mb-4">Teknik Informatika</p>
+            <div class="d-flex justify-content-center mb-3">
+                <a href="https://github.com/fitracandra" class="social-icon" target="_blank">
+                    <i class="bi bi-github"></i>
+                <a href="https://wa.me/081282501067" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/fitracandra.t" class="social-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-4 mb-4">
+                <!-- About Card -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">About Me</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Hai,saya Berkuliah di Universitas Esa Unggul sudah Memasuki Semester 4.</p>
+                        <hr>
+                        <h6>Personal Info</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope me-2"></i> fitrabaru44@gmail.com</li>
+                            <li><i class="bi bi-phone me-2"></i> (+62) 81282501067</li>
+                            <li><i class="bi bi-geo-alt me-2"></i> Tangerang, ind</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Skills</h5>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-primary skill-badge">HTML/CSS</span>
+                        <span class="badge bg-primary skill-badge">JavaScript</span>
+                        <span class="badge bg-primary skill-badge">Bootstrap</span>
+                        <span class="badge bg-primary skill-badge">Node.js</span>
+                        <span class="badge bg-primary skill-badge">Git</span>
+                    </div>
+                </div>
+            </div>
+
+          
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">YourWebsite.com</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
