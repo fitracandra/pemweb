@@ -1,7 +1,7 @@
 <?php
 
-use App\Livewire\ShowAbout;
 use App\Livewire\ShowHomePage;
+use App\Livewire\ShowAbout;
 use App\Livewire\ShowProfile;
 use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
